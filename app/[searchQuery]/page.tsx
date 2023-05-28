@@ -17,11 +17,11 @@ const page = async ({ params: { searchQuery } }: Props) => {
   }
 
   return (
-    <>
-      <h3 className="ml-16 mt-10 text-lg font-bold">
+    <div className="flex flex-col justify-center items-center  lg:justify-start lg:items-start">
+      <h3 className="font-bold text-xl lg:ml-16 mt-10">
         {decodeURIComponent(searchQuery)}:
       </h3>
-      <div className=" flex flex-row flex-wrap ml-16 gap-3 items-start mt-5">
+      <div className=" flex flex-row justify-center lg:justify-start lg:ml-16 flex-wrap  gap-3 items-start mt-5">
         {albums.map((album: any, index: string) => (
           <div key={index}>
             <Card
@@ -34,7 +34,7 @@ const page = async ({ params: { searchQuery } }: Props) => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
