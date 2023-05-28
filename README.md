@@ -93,6 +93,6 @@ Special thanks to the creators of these APIs for providing the data used in this
 
 ## Contact
 
-If you have any questions or suggestions regarding the Music World project, please feel free to contact me at [your-email@example.com](mailto:palhimalaya123@gmail.com).
+If you have any questions or suggestions regarding the Music World project, please feel free to contact me at [palhimalaya123@gmail.com](mailto:palhimalaya123@gmail.com).
 
 Enjoy exploring the Music World!
