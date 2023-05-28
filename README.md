@@ -2,6 +2,10 @@
 
 Music World is a Next.js project that utilizes the RapidAPI services to fetch data from the Billboard API and Spotify API. This README file provides instructions on how to set up and run the project on your local machine.
 
+# Output
+
+![Output](https://github.com/palhimalaya/frontend-assignment/blob/main/public/output.PNG)
+
 ## Prerequisites
 
 Before getting started, ensure that you have the following prerequisites:
