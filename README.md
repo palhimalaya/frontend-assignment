@@ -1,60 +1,98 @@
-# Assignment Title: Next.js Interview Round - Advanced Development Task
+# Music World - Next.js Project
 
-## Assignment Description:
+Music World is a Next.js project that utilizes the RapidAPI services to fetch data from the Billboard API and Spotify API. This README file provides instructions on how to set up and run the project on your local machine.
 
-In this assignment, you will be tasked with developing a Next.js application that demonstrates your proficiency in advanced Next.js concepts and web development skills. The assignment will assess your ability to architect and implement complex features using Next.js, React, and related technologies. You will be required to build a multi-page application with specific functionality and meet certain criteria outlined below.
+## Prerequisites
 
-## Instructions:
+Before getting started, ensure that you have the following prerequisites:
 
-1. Fork this project repo to your profile and clone it to work on the project.
+- Node.js (version 12 or higher)
+- Git
 
-2. Design and implement a multi-page application called "Music World" that allows users to search for and discover music albums.
+## Getting Started
 
-3. The application should have the following pages:
-   - Home Page: Display a list of trending albums with their cover images and artist names. The list should be fetched from an API endpoint.
-   - Search Page: Provide a search bar where users can enter the name of an artist or album. On form submission, display a list of search results (albums) fetched from an API endpoint.
-   - Album Details Page: When a user clicks on an album from the search results or trending list, they should be taken to a page that displays detailed information about the album, including the album cover image, artist name, release date, tracklist etc.
+To set up the Music World project, follow these steps:
 
-Use the following API endpoint for fetching data:
+1. Clone the GitHub repository to your local machine:
 
-- https://docs.7digital.com/reference
-- https://www.last.fm/api
-- https://www.discogs.com/
-- (Recommended) https://rapidapi.com/blog/top-free-music-data-apis/
+```bash
+git clone https://github.com/palhimalaya/frontend-assignment
+```
 
-You can use any of the above apis available. Also, You are free to use any other apis according to your preference.
+2. Change to the project directory:
 
-## Requirements:
+```bash
+cd frontend-assignment
+```
 
-- Make use of Next js 13 latest features
-- Use Next.js for server-side rendering (SSR) and client-side rendering (CSR) as appropriate.
-- Implement efficient data fetching strategies using Next.js data fetching methods based on the specific page requirements. (TanStack Query is preferred)
-- Implement a responsive and visually appealing UI using tailwind css.
-- Implement client-side routing to enable smooth transitions between pages.
-- Handle loading and error states gracefully during data fetching.
-- Maintain global state management with Redux Toolkit / Recoil
-- Write clean, maintainable, and well-documented code.
-- Use Git for version control and commit your code regularly to the forked public Git repository in your profile.
-- Deploy the application to a hosting platform (e.g., Vercel, Netlify) and provide a live demo URL in your repo and the submission form.
+3. Install the project dependencies using npm or yarn:
 
-### Bonus Points:
+```bash
+npm install
+```
 
-- Implement client-side caching mechanisms to optimize API requests and minimize redundant network calls.
-- Enhance the UI with animations or interactive elements to improve user experience. (Headless UI and Component libraries like Chakra/Mantine can be used)
-- Implement pagination or infinite scrolling for the search results page.
-- Add unit tests or integration tests to ensure the correctness of your code.
+4. Create a `.env` file in the root directory of your project and add the following environment variable:
 
-## Submission Guidelines:
+```plaintext
+RAPID_API=YOUR_RAPID_API_KEY
+```
 
-1. Fork this GitHub repository [Assignment Repo](https://github.com/internsathi/frontend-assignment) to your own GitHub account.
-2. Commit your code regularly and push the changes to your forked repository.
-3. Do not create pull request just submit your forked repository.
-4. Provide a DOCS.md file with instructions on how to set up and run your application.
-5. Once you have completed the assignment, share the repository URL along with live deployed url of your project with us via the [submission form](https://docs.google.com/forms/d/e/1FAIpQLSd49m7F_6oSXSI5RFQY_ps2CDQIt3i_iCqrPgzplbqIy8N4EA/viewform)
+Replace `YOUR_RAPID_API_KEY` with your actual RapidAPI key. You can obtain the key by subscribing to the [Billboard API](https://rapidapi.com/DevoCat/api/billboard-api5) and [Spotify API](https://rapidapi.com/Glavier/api/spotify23) services on the RapidAPI website.
 
-- Submission Deadline: Tuesday 30 May, 2023, 11:30 PM
+5. Run the Next.js development server:
 
+```bash
+npm run dev
+```
 
-Note: The assignment is intentionally challenging, and you are not expected to complete all the bonus tasks. Focus on delivering high-quality code and meeting the core requirements first.
+6. Open your web browser and visit `http://localhost:3000` to see the Music World project in action.
 
-Good luck with your assignment! If you have any questions, feel free to ask for clarification.
+## Usage
+
+Once the Music World project is up and running, you can navigate to the homepage and explore the features implemented based on your desired logic. The project is designed to fetch data from the Billboard API and Spotify API using the RapidAPI key specified in the `.env` file.
+
+Feel free to modify the code and design as per your project requirements. You can add additional pages, components, and styles to enhance the functionality and user experience.
+
+## Contributing
+
+If you would like to contribute to the Music World project, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Create a new branch with a descriptive name:
+
+```bash
+git checkout -b my-new-feature
+```
+
+3. Make the necessary changes and commit them:
+
+```bash
+git commit -am 'Add some feature'
+```
+
+4. Push the changes to your branch:
+
+```bash
+git push origin my-new-feature
+```
+
+5. Submit a pull request describing your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+The Music World project utilizes the following APIs:
+
+- [Billboard API](https://rapidapi.com/DevoCat/api/billboard-api5) by DevoCat
+- [Spotify API](https://rapidapi.com/Glavier/api/spotify23) by Glavier
+
+Special thanks to the creators of these APIs for providing the data used in this project.
+
+## Contact
+
+If you have any questions or suggestions regarding the Music World project, please feel free to contact me at [your-email@example.com](mailto:palhimalaya123@gmail.com).
+
+Enjoy exploring the Music World!
