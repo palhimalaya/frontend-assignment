@@ -17,8 +17,8 @@ const getMusicData = async (searchTerm: string) => {
 
   try {
     const response = await fetch(url, options);
-    const result = await response.text();
-    return JSON.parse(result);
+    const result = await response.json();
+    return result;
   } catch (error) {
     console.error(error);
   }
