@@ -6,7 +6,7 @@ const getTopChart = async () => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "bda3774d5fmshebf88f842c3bbbdp16a5abjsn88b9039aebde",
+      "X-RapidAPI-Key": process.env.RAPID_API || "",
       "X-RapidAPI-Host": "billboard-api5.p.rapidapi.com",
     },
   };
