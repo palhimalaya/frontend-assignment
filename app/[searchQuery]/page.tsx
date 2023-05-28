@@ -10,7 +10,7 @@ type Props = {
 const page = async ({ params: { searchQuery } }: Props) => {
   const musicData = getMusicData(searchQuery);
   const data = await musicData;
-  const albums = data?.albums.items;
+  const albums = data?.albums.items || [];
 
   if (!albums.length) {
     return <NotFound />;

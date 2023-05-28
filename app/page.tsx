@@ -6,7 +6,7 @@ import NotFound from "./not-found";
 export default async function Home() {
   const topChart = getTopChart();
   const data = await topChart;
-  const entries = data?.chart?.entries;
+  const entries = data?.chart?.entries || [];
 
   if (!entries.length) {
     return <NotFound />;
