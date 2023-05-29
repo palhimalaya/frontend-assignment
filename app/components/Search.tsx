@@ -20,7 +20,7 @@ export default function Search() {
       <input
         type="text"
         className="bg-white  text-black p-2 w-80 text-xl rounded-xl"
-        placeholder="Search"
+        placeholder="Search music / Albums"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />

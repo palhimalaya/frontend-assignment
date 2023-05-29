@@ -14,7 +14,9 @@ export default async function Home() {
 
   return (
     <div className=" flex flex-col justify-center items-center  lg:justify-start lg:items-start">
-      <h2 className=" font-bold lg:ml-16 mt-10">Top Latest 200 song:</h2>
+      <h2 className=" font-bold lg:ml-16 text-xl mt-10">
+        Billboard Global 200 song:
+      </h2>
       <div className=" flex flex-row justify-center lg:justify-start lg:ml-16 flex-wrap  gap-3 items-start mt-5">
         {entries.map((entry: any) => (
           <div key={entry.rank}>
